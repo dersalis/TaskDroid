@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { TruncatePipe } from '../shared/pipes/truncate/truncate.pipe';
 
 
 @NgModule({
@@ -15,6 +16,10 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, MatrixTileComponent]
+  declarations: [
+    HomePage,
+    MatrixTileComponent,
+    TruncatePipe
+  ]
 })
 export class HomePageModule {}

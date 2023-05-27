@@ -3,7 +3,7 @@
     <ion-title>{{ title }}</ion-title>
     <ion-buttons [collapse]="true" slot="end">
       <ion-button>
-        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        <ion-icon name="settings-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -15,81 +15,27 @@
       <ion-title size="large">{{ title }}</ion-title>
       <ion-buttons [collapse]="true" slot="end">
         <ion-button>
-          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+          <ion-icon name="settings-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <div>
-
-    <app-matrix-tile [content]="tile"></app-matrix-tile>
+  <div style="padding-bottom: 10px; padding-top: 10px;">
+    <ion-row class="ion-margin-horizontal" style="margin-bottom: -5px">
+      <ion-col class="ion-text-start ion-no-padding"><span class="section-header">Macierz</span></ion-col>
+      <ion-col class="ion-text-end ion-no-padding">
+        <ion-button fill="clear" class="section-button">
+          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <app-matrix-tile *ngFor="let tile of tiles"  [content]="tile"></app-matrix-tile>
 
   </div>
 
-  <ion-card color="danger">
-    <ion-card-header>
-      <ion-card-title>
-        <ion-row>
-          <ion-col class="ion-text-start ion-no-padding">Zrób</ion-col>
-          <ion-col class="ion-text-end ion-no-padding">10</ion-col>
-        </ion-row>
-      </ion-card-title>
-      <ion-card-subtitle style="opacity: 0.7">Zrób to teraz</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content style="font-size: 13px; opacity: 0.7; margin-top: -10px">
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card color="secondary" style="margin-top: -10px;">
-    <ion-card-header>
-      <ion-card-title>
-        <ion-row>
-          <ion-col class="ion-text-start ion-no-padding">Odłóż</ion-col>
-          <ion-col class="ion-text-end ion-no-padding">10</ion-col>
-        </ion-row>
-      </ion-card-title>
-      <ion-card-subtitle style="opacity: 0.7">Zaplanuj kiedy to zrobic</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content style="font-size: 13px; opacity: 0.7; margin-top: -10px">
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card color="warning" style="margin-top: -10px;">
-    <ion-card-header>
-      <ion-card-title>
-        <ion-row>
-          <ion-col class="ion-text-start ion-no-padding">Deleguj</ion-col>
-          <ion-col class="ion-text-end ion-no-padding">10</ion-col>
-        </ion-row>
-      </ion-card-title>
-      <ion-card-subtitle style="opacity: 0.7">Daj do zrobienia komuś</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content style="font-size: 13px; opacity: 0.7; margin-top: -10px">
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card color="medium" style="margin-top: -10px;">
-    <ion-card-header>
-      <ion-card-title>
-        <ion-row>
-          <ion-col class="ion-text-start ion-no-padding">Eliminuj</ion-col>
-          <ion-col class="ion-text-end ion-no-padding">10</ion-col>
-        </ion-row>
-      </ion-card-title>
-      <ion-card-subtitle style="opacity: 0.7">Zapomnij i unikaj</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content style="font-size: 13px; opacity: 0.7; margin-top: -10px">
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
-
-
   <ion-list>
-    <ion-list-header  style="margin-top: -20px;">
+    <ion-list-header  style="margin-top: 0px;">
       <ion-label style="opacity: 0.7;">Zakwalifikowane</ion-label>
       <ion-button>
         <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
@@ -147,7 +93,7 @@
   </ion-list>
 
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button>
+    <ion-fab-button color="tertiary">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
     <ion-fab-list side="top">

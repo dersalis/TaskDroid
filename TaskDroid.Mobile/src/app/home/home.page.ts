@@ -10,15 +10,36 @@ import { MatrixTileSize } from '../shared/enums/matrixTileSize';
 })
 export class HomePage {
 
-  title: string = 'Tasks';
+  title: string = 'Zadania';
+
   tile: MatrixTileDto = {
-    title: 'Tytuł 1',
-    subTitle: 'PodTytuł 1',
-    desctiption: 'Opis',
     tileType: MatrixTileType.q1,
     tileSize: MatrixTileSize.middle,
     quantity: 6,
   };
+
+  tiles: MatrixTileDto[] = [
+    {
+      tileType: MatrixTileType.q1,
+      tileSize: MatrixTileSize.middle,
+      quantity: 12,
+    },
+    {
+      tileType: MatrixTileType.q2,
+      tileSize: MatrixTileSize.middle,
+      quantity: 24,
+    },
+    {
+      tileType: MatrixTileType.q3,
+      tileSize: MatrixTileSize.middle,
+      quantity: 36,
+    },
+    {
+      tileType: MatrixTileType.q4,
+      tileSize: MatrixTileSize.middle,
+      quantity: 48,
+    }
+  ];
 
   constructor() {}
 
