@@ -2,7 +2,9 @@
   <ion-toolbar>
     <ion-title>{{ title }}</ion-title>
     <ion-buttons [collapse]="true" slot="end">
-      <ion-button>Button</ion-button>
+      <ion-button>
+        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -12,10 +14,18 @@
     <ion-toolbar>
       <ion-title size="large">{{ title }}</ion-title>
       <ion-buttons [collapse]="true" slot="end">
-        <ion-button>Button</ion-button>
+        <ion-button>
+          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        </ion-button>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
+
+  <div>
+
+    <app-matrix-tile [content]="tile"></app-matrix-tile>
+
+  </div>
 
   <ion-card color="danger">
     <ion-card-header>
@@ -32,7 +42,7 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card color="secondary">
+  <ion-card color="secondary" style="margin-top: -10px;">
     <ion-card-header>
       <ion-card-title>
         <ion-row>
@@ -47,7 +57,7 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card color="warning">
+  <ion-card color="warning" style="margin-top: -10px;">
     <ion-card-header>
       <ion-card-title>
         <ion-row>
@@ -62,7 +72,7 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card color="medium">
+  <ion-card color="medium" style="margin-top: -10px;">
     <ion-card-header>
       <ion-card-title>
         <ion-row>
@@ -76,5 +86,78 @@
       Here's a small text description for the card content. Nothing more, nothing less.
     </ion-card-content>
   </ion-card>
+
+
+  <ion-list>
+    <ion-list-header  style="margin-top: -20px;">
+      <ion-label style="opacity: 0.7;">Zakwalifikowane</ion-label>
+      <ion-button>
+        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+      </ion-button>
+    </ion-list-header>
+
+    <ion-item href="#">
+      <ion-icon name="square-outline" slot="start"></ion-icon>
+      <ion-label>Zaległe</ion-label>
+      <ion-label slot="end" style="opacity: 0.7">23</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-icon name="calendar-number-outline" slot="start"></ion-icon>
+      <ion-label>Dziś</ion-label>
+      <ion-label slot="end" style="opacity: 0.7">23</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-icon name="calendar-outline" slot="start"></ion-icon>
+      <ion-label>Zaplanowane</ion-label>
+      <ion-label slot="end" style="opacity: 0.7">23</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-icon name="file-tray-outline" slot="start"></ion-icon>
+      <ion-label>Wszystkie</ion-label>
+      <ion-label slot="end" style="opacity: 0.7">23</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+      <ion-label>Wykonane</ion-label>
+      <ion-label slot="end" style="opacity: 0.7">23</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- Moje listy -->
+  <ion-list style="margin-bottom: 60px;">
+    <ion-list-header  style="margin-top: 0px;">
+      <ion-label style="opacity: 0.7;">Listy</ion-label>
+      <ion-button>
+        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+      </ion-button>
+    </ion-list-header>
+
+    <ion-item href="#">
+      <ion-label>Lista 1</ion-label>
+      <ion-label slot="end" style="opacity: 0.7">23</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label>Lista 2</ion-label>
+      <ion-label slot="end" style="opacity: 0.7">23</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label>Lista 3</ion-label>
+      <ion-label slot="end" style="opacity: 0.7">23</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="list-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="checkmark-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 
 </ion-content>

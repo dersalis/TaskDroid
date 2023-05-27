@@ -1,3 +1,4 @@
+import { MatrixTileComponent } from './../shared/components/matrix-tile/matrix-tile.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -14,6 +15,6 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, MatrixTileComponent]
 })
 export class HomePageModule {}

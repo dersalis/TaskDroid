@@ -1,0 +1,14 @@
+<ion-card color="danger" style="margin-bottom: -10px;">
+  <ion-card-header>
+    <ion-card-title>
+      <ion-row>
+        <ion-col class="ion-text-start ion-no-padding">{{ content?.title }}</ion-col>
+        <ion-col class="ion-text-end ion-no-padding">{{ content?.quantity }}</ion-col>
+      </ion-row>
+    </ion-card-title>
+    <ion-card-subtitle style="opacity: 0.7">{{ content?.subTitle }}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content *ngIf="size >= 1"  style="font-size: 13px; opacity: 0.7; margin-top: -10px">
+    {{ content?.desctiption }}
+  </ion-card-content>
+</ion-card>
