@@ -21,6 +21,10 @@
     </ion-toolbar>
   </ion-header>
 
+  <!-- <ion-router-link href="#/page-two">
+    <ion-button>Go to Page 2</ion-button>
+  </ion-router-link> -->
+
   <div style="padding-bottom: 10px; padding-top: 10px;">
     <ion-row class="ion-margin-horizontal" style="margin-bottom: -5px">
       <ion-col class="ion-text-start ion-no-padding"><span class="section-header">Macierz</span></ion-col>
@@ -30,7 +34,7 @@
         </ion-button>
       </ion-col>
     </ion-row>
-    <app-matrix-tile *ngFor="let tile of tiles"  [content]="tile"></app-matrix-tile>
+    <app-matrix-tile *ngFor="let tile of dashboardData?.matrixTiles"  [content]="tile"></app-matrix-tile>
 
   </div>
 

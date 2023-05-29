@@ -11,6 +11,10 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
+  {
+    path: 'tasks-by-priority/:priorityId',
+    loadChildren: () => import('./pages/tasks-by-priority/tasks-by-priority.module').then( m => m.TasksByPriorityPageModule)
+  },
 ];
 
 @NgModule({
