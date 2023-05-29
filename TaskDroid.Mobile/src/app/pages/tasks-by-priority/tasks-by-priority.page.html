@@ -1,13 +1,57 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Tasks</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Zrób</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tasks</ion-title>
+      <!-- <ion-buttons slot="start">
+        <ion-back-button default-href="#"></ion-back-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons> -->
+      <ion-title size="large">Zrób</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-accordion-group color="warning">
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label style="font-variant: small-caps;">Zrób to teraz</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content" style="font-size: 14px;">Działania, które wymagają natychmiastowej uwagi, np. nagłe problemy zdrowotne, kryzysy w firmie, itp.</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita optio numquam dolor totam, pariatur, distinctio quam officiis dolorum eligendi, repellat porro. Totam cum repellat nostrum doloremque rerum eos commodi fugit.
+  </p>
 </ion-content>

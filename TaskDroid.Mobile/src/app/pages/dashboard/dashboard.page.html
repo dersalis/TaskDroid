@@ -34,7 +34,7 @@
         </ion-button>
       </ion-col>
     </ion-row>
-    <app-matrix-tile *ngFor="let tile of dashboardData?.matrixTiles"  [content]="tile"></app-matrix-tile>
+    <app-matrix-tile *ngFor="let tile of dashboardData?.matrixTiles"  [content]="tile" [routerLink]="['../tasks-by-priority/', tile.tileType]"></app-matrix-tile>
 
   </div>
 
