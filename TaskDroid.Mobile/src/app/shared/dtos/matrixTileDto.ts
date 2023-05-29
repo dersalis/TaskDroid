@@ -1,8 +1,8 @@
 import { MatrixTileSize } from "../enums/matrixTileSize";
-import { MatrixTileType } from "../enums/matrixTileType";
+import { TaskPriority } from "../enums/taskPriority";
 
 export interface MatrixTileDto {
   quantity: number;
-  tileType: MatrixTileType;
+  tileType: TaskPriority;
   tileSize: MatrixTileSize;
 }
